@@ -103,6 +103,11 @@ body {
 
   cursor: pointer;
 }
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--accent-color);
+  background-color: var(--main-background-color);
+}
 .features-title {
   text-transform: uppercase;
   font-size: 14px;
