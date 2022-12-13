@@ -58,7 +58,7 @@ body {
 .accent {
   color: var(--accent-color);
 }
-.dh-navi {
+.navi {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -66,11 +66,11 @@ body {
   padding: 32px 0;
   display: flex;
 }
-.dh-navi:hover,
-.dh-navi:focus {
+.navi:hover,
+.navi:focus {
   color: var(--accent-color);
 }
-.dh-add {
+.mail-phone {
   color: var(--headadd-font-color);
 
   font-weight: 500;
@@ -78,8 +78,8 @@ body {
   line-height: 1.143;
   letter-spacing: 0.02em;
 }
-.dh-add:hover,
-.dh-add:focus {
+.mail-phone:hover,
+.mail-phone:focus {
   color: var(--accent-color);
 }
 .hero {
@@ -186,7 +186,7 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 0px;
 }
-.df {
+.design-footer {
   background-color: var(--footer-bg-color);
 
   padding-top: 60px;
@@ -202,7 +202,7 @@ body {
   line-height: 1.192;
   letter-spacing: 0.03em;
 }
-.addr-map {
+.footer-map {
   color: var(--secondary-font-color);
 
   text-decoration: none;
@@ -211,11 +211,11 @@ body {
   line-height: 1.143;
   letter-spacing: 0.03em;
 }
-.add-text {
+.footer-items {
   margin-bottom: 12px;
 }
-.addr-mail,
-.addr-tel {
+.footer-mail,
+.footer-phon {
   color: var(--add-ml-color);
 
   font-style: normal;
@@ -224,12 +224,12 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.addr-mail:hover,
-.addr-mail:focus,
-.addr-tel:hover,
-.addr-tel:focus,
-.addr-map:hover,
-.addr-map:focus {
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-phon:hover,
+.footer-phon:focus,
+.footer-map:hover,
+.footer-map:focus {
   color: var(--accent-color);
 }
 .portfolio-button {
@@ -312,8 +312,7 @@ img {
   gap: 30px;
 }
 
-/* Початок роботи з шапкою */
-.dh {
+.design-header {
   border-bottom: 1px solid var(--header-line-color);
 }
 .header-container {
@@ -329,22 +328,18 @@ img {
   display: flex;
   gap: 50px;
 }
-.add {
+.header-media {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-/* Початок роботи з Головною */
 
 .team-list {
   display: flex;
   gap: 30px;
 }
-
-.addf {
+.address-box {
   margin-top: 28px;
-}
-.list-container {
 }
 .list-button {
   display: flex;
