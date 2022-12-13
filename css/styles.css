@@ -63,6 +63,8 @@ body {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
+  padding: 32px 0;
+  display: flex;
 }
 .dh-navi:hover,
 .dh-navi:focus {
@@ -82,7 +84,11 @@ body {
 }
 .hero {
   background-color: var(--hero-bg-color);
-  margin: 0 0 24px;
+  margin: 0 auto;
+
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: var(--secondary-font-color);
@@ -114,15 +120,10 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* width: 200px; */
-  /* height: 50px; */
+
   border-radius: 4px;
   border: none;
   padding: 10px 24px;
-  /* padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 24px;
-  padding-right: 24px; */
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -173,7 +174,7 @@ body {
   font-size: 16px;
   line-height: 1.1875;
   letter-spacing: 0.03em;
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 .team-text {
@@ -183,10 +184,13 @@ body {
   font-size: 16px;
   line-height: 1.1875;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .df {
   background-color: var(--footer-bg-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   color: var(--secondary-font-color);
@@ -200,17 +204,23 @@ body {
 }
 .addr-map {
   color: var(--secondary-font-color);
+
   text-decoration: none;
   font-style: normal;
-  line-height: 1.714;
+  font-size: 14px;
+  line-height: 1.143;
   letter-spacing: 0.03em;
+}
+.add-text {
+  margin-bottom: 12px;
 }
 .addr-mail,
 .addr-tel {
   color: var(--add-ml-color);
 
   font-style: normal;
-  line-height: 1.714;
+  font-size: 14px;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -259,12 +269,7 @@ body {
   color: var(--accent-color);
 }
 
-/* work with blocks */
-/* * {
-  box-sizing: border-box;
-} */
 .section {
-  /* width: 1600px; */
   padding: 94px 0;
 }
 .work {
@@ -291,50 +296,29 @@ p {
   padding-left: 0;
   margin: 0;
 }
-/* Класс для обнуления базовых свойств у ссылок */
-/* .link {
-  text-decoration: none;
-  color: inherit;
-} */
+
 /* Свойства для корректного отображения картинок */
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-/* Свойства для обнуления курсива у address */
-/* address {
-  font-style: normal;
-} */
 
 .features-card {
   width: 270px;
-  /* border: 2px dotted red; */
 }
 .features-list {
   display: flex;
   gap: 30px;
 }
 
-.features-card:first-child {
-}
 /* Початок роботи з шапкою */
 .dh {
-  display: flex;
-  /* padding: 24px 215px 25px 215px; */
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid var(--header-line-color);
-  /* width: 1600px; */
-  max-width: 100%;
 }
 .header-container {
-  /* width: 1600px; */
   display: flex;
-  /* justify-content: space-between; */
-  /* align-items: center; */
-  gap: 354px;
-  /* max-width: 100%; */
+  justify-content: space-between;
 }
 .nav-container {
   display: flex;
@@ -351,38 +335,16 @@ img {
   gap: 40px;
 }
 /* Початок роботи з Головною */
-.hero {
-  /* width: 1600px; */
-  max-width: 100%;
-  /* justify-content: center;
-  flex-direction: column; */
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-/* .hero-container {
-  padding: 200px, 452px;
-} */
 
 .team-list {
   display: flex;
   gap: 30px;
 }
-/* .footer-container {
-  margin: 0;
-  padding: 0;
-} */
-.df {
-  /* width: 1600px; */
-  padding-top: 60px;
-  padding-bottom: 60px;
-  /* padding-left: 215px; */
-}
+
 .addf {
   margin-top: 28px;
 }
 .list-container {
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
 }
 .list-button {
   display: flex;
@@ -396,12 +358,11 @@ img {
   gap: 30px;
 }
 .porfolio-title {
-  /* margin: 20px 24px 4px 24px; */
   margin-bottom: 4px;
 }
-/* .portfolio-text {
-  margin: 0px 24px 20px 24px;
-} */
+.portfolio-text {
+  margin: 0;
+}
 .div-text {
   padding: 20px 24px;
   border-left: 1px solid var(--item-border-color);
@@ -419,4 +380,7 @@ img {
 }
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
+}
+.text-container {
+  padding: 30px;
 }
